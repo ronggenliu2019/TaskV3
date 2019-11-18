@@ -42,8 +42,8 @@ public class Game {
             for (int i = 0; i < PLAYER_AMOUNT; i++) {
                 ranks[i] = ranks[i] + cards[i].getRank();
 
-                if (ranks[i] > 50) {
-                    winNum = i+1;
+                if (ranks[i] > 50 && winNum == 0) {
+                    winNum = i + 1;
                     gameOver = true;
                 }
             }
